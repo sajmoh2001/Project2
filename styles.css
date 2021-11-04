@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-header {
+    color: white;
+    font-size: 20px;
+    margin: centre;
+} 
+
+h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+.h5 {
+    
+    border-radius: 80px;
+    height: 80px;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1000px;
+    white-space: 10%;
+
+}
+
+
+
+
+.section {
+    height: 100vh;
+    text-align: center;
+    padding: 2em;
+}
+
+.page-header {
+    background-color: #2ACFEF;
+    border-radius: 50px;
+    height: 50px;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1000px;
+    white-space: 10%;
+}
+
+ 
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+ 
+  .arrow{
+      position: absolute;
+      top: 130%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+  }
+  .arrow span{
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 5px solid #06A8FF;
+      border-right: 5px solid #06A8FF;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+      animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+      animation-delay: -0.4s;
+  }
+  @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(45deg) translate(-20px,-20px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(45deg) translate(20px,20px);
+      }
+  }
+
+  .card {
+    bottom: 100%;
+    background-color: #1ba6c2;
+    color: white;
+    padding: 1rem;
+    height: 30rem;
+  }
+  
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+  }
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
+
+.nexttologo {
+   text-align: center;
+}
+
+.horizSlider {
+    position: relative;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .horizSlider .slide {
+    display: inline-block;
+    position: relative;
+  }
+  .slideText {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    z-index: 1;
+    font-size: 3em;
+    font-weight: 400;
+  }
+  .slideImage {
+    transform-origin: bottom left;
+  }
+  
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    align-items: center;
+  }
+
+.footer {
+    text-align: center;
+}
+ 
+.avatar {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+
+  
+
